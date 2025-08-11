@@ -1,0 +1,454 @@
+* {
+    user-select: none;
+}
+
+
+
+/* =========fonts========= */
+.winky-rough-font {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: ; */
+    font-style: normal;
+}
+@font-face {
+    font-family: "Maison Neue";
+    src: url("../assets/fonts/fonnts.com-Maison_Neue_Book.ttf");
+}
+
+
+
+/* html */
+.reload {
+    position: fixed;
+    height: 90vh;
+    width: 500px;
+    opacity:0;
+}
+
+body {
+    background-color: #eeeeee;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+    /* background-color: red; */
+    box-shadow: 0 1px 5px -3px rgba(0, 0, 0, 0.356);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    z-index: 99;
+}
+
+nav .nav-left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+nav .hamburger-menu {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    margin-left: 10px;
+}
+.logo {
+    height: fit-content;
+    margin: 10px 50px 0 50px;
+
+}
+.nav-btn {
+    display: flex;
+}
+.nav-btn a {
+    margin: 0 20px;
+    height: 70px;
+    text-decoration: none;
+    font-family: "Maison Neue";
+    color: rgb(24, 24, 24);
+    font-weight: 500;
+}
+.nav-btn a p{
+    margin: 0;
+    transform: translateY(28px);
+}
+
+nav .nav-right {
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    /* margin-right: 30px; */
+}
+
+nav .nav-right .nr-btn {
+    border-radius: 100px;
+    border: 1px solid #eaa000;
+    background-color: #ffecc3;
+    color: #eaa000;
+}
+
+nav .nav-right .login {
+    width: 157px;
+    height: 41px;
+    font-size: 16px;
+    transition: .2s;
+}
+
+nav .nav-right .nr-btn:active {
+    background-color: #e0c17d;
+}
+
+nav .nav-right .search {
+    width: 41px;
+    height: 41px;
+    margin-right: 10px;
+}
+.hamburger-menu {
+    display: none;
+}
+
+.slider {
+    position: fixed;
+    background-color: #f5f5f5;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    box-shadow: 1px 0 6px -3px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .3s;
+    display: none;
+}
+.slider-slide {
+    transform: translateX(0);
+    opacity: 1;
+}
+.slider-top {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.slider-nav a {
+    font-family: "Maison Neue";
+    color: rgba(0, 0, 0, 0.856);
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+
+
+
+main {
+    display: grid;
+    place-items: center;
+    margin-top: 80px;
+}
+
+main .main-top {
+    width: 99%;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner {
+    width: 100%;
+    height: 370px;
+    background-color: #bf3a3a;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-top .banner h1 {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 26px;
+    color: #f5f5f5;
+    margin-top: 150px;
+    width: fit-content;
+}
+
+main .main-top .alamat{
+    position: absolute;
+    max-width: 500px;
+    background-color: #f5f5f5;
+    top: 370px;
+    border-radius: 10px;
+    padding: 40px 10px 10px 10px;
+    box-shadow: 0 0 6px -3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.alamat form{
+    height: fit-content;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.alamat button {
+    width: 140px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid #eaa000;
+    color: #eaa000;
+    background-color: #ffecc3;
+    font-size: 16px;
+}
+
+.alamat .input-alamat {
+    /* background-color: black; */
+    border: 1px solid #5555553a;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-right: 10px;
+    border-radius: 100px;
+    padding: 0 20px 0 25px;
+}
+
+.alamat .input-alamat input {
+    width: 75%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+}
+
+.input-dropdown {
+    opacity: 0;
+    height: 1px;
+    overflow: hidden;
+    top: 140px;
+    position: absolute;
+    width: 71%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transition: .5s ease;
+    box-shadow: 0 0 6px -3px;
+}
+.drop {
+    height: fit-content;
+    opacity: 1;
+}
+
+.input-dropdown div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.747);
+    transition: .2s;
+}
+.input-dropdown div:hover {background-color: #eaeaea;}
+.input-dropdown div:active {background-color: #e4e4e4;}
+
+.main-feature {
+    /* background-color: blue; */
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+.main-feature h1 {
+    font-family: "Maison Neue";
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(61, 61, 61);
+}
+
+.main-feature .feature {
+    display: flex;
+    justify-content: space-around;
+}
+.feature a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.main-feature .feature a .feature-warung {
+    background-color: #f5f5f5;
+    width: 200px;
+    height: 150px;
+    margin: 0px 20px;   
+    border-radius: 10px;
+    box-shadow: 0 0 6px -3px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+.main-feature .feature .feature-warung p {
+    font-family: "Winky Rough", sans-serif;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+
+
+
+
+/* warung */
+.main-warung {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;    
+}
+.main-warung h1 {
+
+    /* margin-top: 30px; */
+    font-family: "Maison Neue";
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(61, 61, 61);
+}
+
+.main-warung .warung {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* max 4 card (kalo container-nya cukup) */
+    gap: 16px;
+    max-width: 950px; /* kira-kira biar 4 card muat */
+    width: 100%;
+}
+
+
+
+/* product card */
+.product-card {
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 8px;
+    /* text-align: center; */
+    /* height: 230px; */
+    box-shadow: 0 0 6px -3px; 
+    display: flex;
+    flex-direction: column;
+
+}
+.img-warung {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.img-warung img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.title-warung {
+    /* background-color: red; */
+    padding: 10px;
+}
+.title-warung p.title {
+    margin: 0;
+    font-family: "Maison Neue";
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.8;
+    overflow: hidden;
+    white-space: nowrap;
+    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+
+}
+.title-warung .status, .jarak-warung div{
+    margin: 0;
+    font-family: "Maison Neue";
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.jarak-warung {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* for animation */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 500px) {
+    .nav-btn, .login {display: none;}
+    .warlok-logo {width:100px;}
+    .logo {
+        height: fit-content;
+        margin: 10px 50px 0 20px;
+    }
+    .alamat form {flex-direction: column;}
+    .alamat button {width: 100%;}
+    .alamat .input-alamat {
+        width: 86%;
+        margin-bottom: 10px;
+    }
+    .slider, .hamburger-menu {
+        display: flex;
+    }
+    .banner {width: 100%;}
+    .main-feature {
+        padding: 0;
+        margin: 30px 0;
+    }
+    .main-feature .feature {
+        align-items: center;
+      }
+    .main-feature .feature a .feature-warung {
+        width: 108px;
+        height: 100px;
+        margin: 5px;
+    }
+    .main-feature .feature a .feature-warung p{
+        font-size: 11px;
+    }
+    .main-feature .feature a .feature-warung img{
+        height: 30px;
+    }
+    
+    .main-warung .warung {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* max 4 card (kalo container-nya cukup) */
+        max-width: 400px; /* kira-kira biar 4 card muat */
+        width: 100%;
+    }
+    .title-warung .status, .jarak-warung div{
+        font-size: 10px;
+    }
+    .jarak-warung img {
+        width: 7px;
+    }
+}
+

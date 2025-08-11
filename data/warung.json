@@ -1,0 +1,47 @@
+[
+    {
+        "nama": "Ahmad Rojali",
+        "desc": "warung madura",
+        "open": 2,
+        "galon": true,
+        "gas": true,
+        "jarak": "800m",
+        "img": "/assets/img_warung/ADHMAD_ROJALI.jpg"
+    },
+    {
+        "nama": "Alliza",
+        "desc": "warung",
+        "open": 1,
+        "galon": true,
+        "gas": "",
+        "jarak": "351m",
+        "img": "/assets/img_warung/ALLIZA.jpg"
+    },
+    {
+        "nama": "Madura Jafar",
+        "desc": "warung madura",
+        "open": 2,
+        "galon": true,
+        "gas": true,
+        "jarak": "400m",
+        "img": "/assets/img_warung/MADURA_JAFAR.jpg"
+    },
+    {
+        "nama": "Mulya Aji Jaya",
+        "desc": "warung",
+        "open": 1,
+        "galon": true,
+        "gas": true,
+        "jarak": "200m",
+        "img": "/assets/img_warung/MULYA_AJI_JAYA.jpeg"
+    },
+    {
+        "nama": "Pangestu",
+        "desc": "warung",
+        "open": 0,
+        "galon": "",
+        "gas": "",
+        "jarak": "450m",
+        "img": "/assets/img_warung/PANGESTU.jpeg"
+    }
+]

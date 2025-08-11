@@ -1,0 +1,39 @@
+<div class="main-top">
+    <div class="banner">
+        <h1>Belanja kebutuhan sehari hari,<br>tanpa ribet kesana kemari</h1>
+    </div>
+    
+
+<div class="main-feature">
+    <h1>Mau beli apa hari ini?</h1>
+    <div class="feature">
+        <div class="feature-warung">
+            <img src="/assets/icons/basket.svg" height="70">
+            <p>kebutuhan rumah</p>
+        </div>
+        <div class="feature-warung">
+            <img src="/assets/icons/galons.svg" height="70">
+            <p>Galon</p>
+        </div>
+        <div class="feature-warung">
+            <img src="/assets/icons/gases.svg" height="70">
+            <p>Gas LPG</p>
+        </div>
+    </div>
+</div>
+<div class="main-warung">
+    <h1>Kunjungi warung terdekat yuk!</h1>
+    <div class="warung">
+        <% warung.forEach(item => { %> 
+            <%- include("../partials/warung-card.ejs", {
+                nama    : item.nama,
+                desc    : item.desc,
+                open    : item.open,
+                galon   : item.galon,
+                gas     : item.gas,
+                jarak   : item.jarak,
+                img     : item.img
+            }) %>
+        <% }); %>
+    </div>
+</div>

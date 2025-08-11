@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="top">
+        <img src="/assets/icons/warlok-icon.svg" width="24" srcset="">
+        <h1>Register</h1>
+    </div>
+    <div class="middle">
+        <form action="/login" method="post" id="formData">
+
+            <label for="phone">Nomor Telepon:</label>
+            <input required autocomplete="off" type="text" name="phone" id="phone" placeholder="Masukan Nomor Telepon">
+            <label for="username">Username:</label>
+            <input required autocomplete="off" type="text" name="username" id="username" placeholder="Username atau Nomor Handphone">
+            <label for="password">Password:</label>
+            <input required autocomplete="off" type="password" name="password" id="password" placeholder="Password">
+            <input required autocomplete="off" type="password" name="password" id="password-confirm" placeholder="Konfirmasi Password">
+            <div class="checkPasswd">
+                <input type="checkbox" name="hidePasswd" id="hidePasswd" style="margin-right: 7px;">
+                <label for="hidePasswd" style="transform: translateY(1px);">Show password</label>
+            </div>
+            <button style="display: block; width: 100%;margin-top: 15px;" type="submit" class="" id="formBtn" disabled>Register</button>
+        </form>
+    </div>
+    <div class="bottom">
+        <p><a href="/open-store">Buka warung</a></p>
+        <p>Sudah punya akun? <a href="/login">Login</a></p>
+    </div>
+</div>
+<script>
+    const form = document.getElementById("formData");
+const formBtn = document.getElementById("formBtn");
+const hidePasswd = document.getElementById("hidePasswd");
+const passwd = document.getElementById("password");
+const passwdConfirm = document.getElementById("password-confirm");
+const phone = document.getElementById("phone");
+
+hidePasswd.addEventListener('click', () => {
+    if(passwd.type == "password"){
+        passwd.type = "text";
+        passwdConfirm.type = "text";
+        
+    } else {
+        passwd.type = "password";
+        passwdConfirm.type = "password";
+    }
+});
+
+phone.addEventListener("input", ()=>{
+    if(isNaN(phone.value)){
+        phone.classList.add("input-wrong");
+        formBtn.disabled = true;
+    } else {
+        phone.classList.remove("input-wrong");
+        formBtn.disabled = !(passwd.value == passwdConfirm.value);
+    }
+});
+
+passwdConfirm.addEventListener("input", () => {
+    if(passwd.value != passwdConfirm.value){
+        passwd.classList.add("input-wrong");
+        passwdConfirm.classList.add("input-wrong");
+        formBtn.disabled = true;
+    } else {
+        passwd.classList.remove("input-wrong");
+        passwdConfirm.classList.remove("input-wrong");
+        formBtn.disabled = isNaN(phone.value);
+    }
+});
+
+form.addEventListener("submit",async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = {
+        phone: formData.get("phone"),
+        username: formData.get("username"),
+        password: formData.get("password")
+    }
+
+    const response = await fetch('/register', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    if(result.username && result.phone){
+        // window.location.href = "/login";
+        alert("gokil");
+    } 
+    else {
+        console.log(result);
+    }
+});
+
+</script>

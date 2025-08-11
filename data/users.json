@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 1,
+        "phone" : "082313380653",
+        "name" : "Ahmad Rojali",
+        "username" : "rojali_",
+        "password" : "rojalirojali"
+    },
+    {
+        "id" : 2,
+        "phone" : "085776905155",
+        "name" : "Aliza",
+        "username" : "aliza",
+        "password" : "aliza1234"
+    }
+]

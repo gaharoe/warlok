@@ -1,0 +1,5 @@
+- beranda
+- menu
+- lihat pesanan
+- penawaran terbaik / voucher
+- bantuan

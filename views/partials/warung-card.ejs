@@ -1,0 +1,33 @@
+<%
+let status = {};
+status.open = open == 2 ? "24 jam" : open == 1 ? "buka" : "tutup";
+status.color = open == 0 ? "red;" : "green;";
+status.galon = galon == true ? "galon" : "";
+%>
+
+<div class="product-card">
+    <div class="img-warung">
+        <img src="<%= img %>" alt="" srcset="">
+    </div>
+    <div class="title-warung" id="title-warung">
+        <p class="title" id="nama-warung">Warung <%=nama%></p>
+        <div class="status" style="display: flex; align-items: center;">
+
+            <div class="open">
+                <span style="color: <%-status.color%>;"><%=status.open%></span>
+            </div>
+            <% if(galon == true){%>
+                <div style="background-color: rgb(37, 37, 37); width: 3px; height: 3px;border-radius:100px; margin: 0 5px;"></div>
+                <div>galon</div>
+            <%}%>
+            <% if(gas == true){%>
+                <div style="background-color: rgb(37, 37, 37); width: 3px; height: 3px;border-radius:100px; margin: 0 5px;"></div>
+                <div>gas</div>
+            <%}%>
+        </div>
+        <div class="jarak-warung">
+            <img src="/assets/icons/location.svg" width="12" alt="" srcset="">
+            <div style="margin-left: 5px;"><%=jarak%></div>
+        </div>
+    </div>
+</div>

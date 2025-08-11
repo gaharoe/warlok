@@ -1,0 +1,72 @@
+<div class="main-top">
+    <div class="banner">
+        <h1>Belanja kebutuhan sehari hari,<br>tanpa ribet kesana kemari</h1>
+    </div>
+    <div class="alamat">
+        <p style="margin: 0 0 5px 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 900;font-size: 18px;opacity: 0.7;">Lokasi anda</p>
+        <form action="/" method="post">
+            <span class="input-alamat">
+                <svg class="location-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <path fill="#ce3a3a" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24	C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"/>
+                </svg>
+                <input id="input-address" value="Jl. Puspitek, Tangerang Selatan" autocomplete="off" required type="text" name="alamat" placeholder="Ketikan alamatmu...">
+                <div style="height: 25px">
+                    <svg style="transition:0.2s;" id="dropdown-alamat" width="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="directional" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="drop-down" fill="#eaa000">
+                                <polygon id="Shape" points="5 8 12 16 19 8"></polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </span>
+            <button type="submit" name="alamat">cari warung</button>
+        </form>
+        <span id="input-dropdown" class="input-dropdown">
+            <div class="loc-perm">
+                <p>Pilih lokasi anda saat ini</p>
+                <svg width="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 2a1 1 0 0 1 2 0v2.062A8.004 8.004 0 0 1 19.938 11H22a1 1 0 0 1 0 2h-2.062A8.004 8.004 0 0 1 13 19.938V22a1 1 0 0 1-2 0v-2.062A8.004 8.004 0 0 1 4.062 13H2a1 1 0 0 1 0-2h2.062A8.004 8.004 0 0 1 11 4.062V2zm7 10a6 6 0 1 0-12 0 6 6 0 0 0 12 0zm-3 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" fill="#eaa000"/></svg>
+            </div>
+        </span>
+    </div>
+</div>
+
+<div class="main-feature">
+    <h1>Mau beli apa hari ini?</h1>
+    <div class="feature">
+        <a href="/warung" class="nav-warung">
+            <div class="feature-warung">
+                <img src="/assets/icons/basket.svg" height="70">
+                <p>kebutuhan rumah</p>
+            </div>
+        </a>
+        <a href="/galon">
+            <div class="feature-warung">
+                <img src="/assets/icons/galons.svg" height="70">
+                <p>Galon</p>
+            </div>
+        </a>
+        <a href="/gas">
+            <div class="feature-warung">
+                <img src="/assets/icons/gases.svg" height="70">
+                <p>Gas LPG</p>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="main-warung">
+    <h1>Kunjungi warung terdekat yuk!</h1>
+    <div class="warung">
+        <% warung.forEach(item => { %> 
+            <%- include("../partials/warung-card.ejs", {
+                nama    : item.nama,
+                desc    : item.desc,
+                open    : item.open,
+                galon   : item.galon,
+                gas     : item.gas,
+                jarak   : item.jarak,
+                img     : item.img
+            }) %>
+        <% }); %>
+    </div>
+</div>

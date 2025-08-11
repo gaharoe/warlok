@@ -1,0 +1,164 @@
+[
+    {
+        "nama": "Aqua 300ml",
+        "harga": 3000,
+        "deskripsi": "Air mineral kemasan botol ukuran kecil.",
+        "img": "data/img_product/AQUA_300ML.jpg"
+    },
+    {
+        "nama": "Bimoli 1L",
+        "harga": 18500,
+        "deskripsi": "Minyak goreng berkualitas tinggi.",
+        "img": "data/img_product/BIMOLI_1L.jpg"
+    },
+    {
+        "nama": "Cerelac Sachet",
+        "harga": 3500,
+        "deskripsi": "Bubur bayi instan rasa susu dan gandum.",
+        "img": "data/img_product/CERELAC_SACHET.jpg"
+    },
+    {
+        "nama": "Close Up",
+        "harga": 9000,
+        "deskripsi": "Pasta gigi dengan sensasi menyegarkan.",
+        "img": "data/img_product/CLOSE_UP.png"
+    },
+    {
+        "nama": "Colgate",
+        "harga": 9500,
+        "deskripsi": "Pasta gigi dengan perlindungan maksimal.",
+        "img": "data/img_product/COLGATE.jpg"
+    },
+    {
+        "nama": "Desaku Bawang Putih Bubuk",
+        "harga": 2500,
+        "deskripsi": "Bumbu bubuk bawang putih praktis.",
+        "img": "data/img_product/DESAKU_BAWANG_PUTIH_BUBUK.jpg"
+    },
+    {
+        "nama": "Desaku Ketumbar Bubuk",
+        "harga": 2500,
+        "deskripsi": "Bumbu bubuk ketumbar praktis.",
+        "img": "data/img_product/DESAKU_KETUMBAR_BUBUK.jpg"
+    },
+    {
+        "nama": "Desaku Kunyit Bubuk",
+        "harga": 2500,
+        "deskripsi": "Bumbu bubuk kunyit praktis.",
+        "img": "data/img_product/DESAKU_KUNYIT_BUBUK.jpg"
+    },
+    {
+        "nama": "Garam",
+        "harga": 2000,
+        "deskripsi": "Garam dapur halus beryodium.",
+        "img": "data/img_product/GARAM.jpg"
+    },
+    {
+        "nama": "Indomie",
+        "harga": 3500,
+        "deskripsi": "Mie goreng instan legendaris Indonesia.",
+        "img": "data/img_product/INDOMIE.jpg"
+    },
+    {
+        "nama": "Ladaku",
+        "harga": 2000,
+        "deskripsi": "Merica bubuk praktis dalam kemasan sachet.",
+        "img": "data/img_product/LADAKU.webp"
+    },
+    {
+        "nama": "Lifebuoy Batang",
+        "harga": 4000,
+        "deskripsi": "Sabun batang antibakteri.",
+        "img": "data/img_product/LIFEBUOY_BATANG.png"
+    },
+    {
+        "nama": "Lifebuoy Cair",
+        "harga": 7000,
+        "deskripsi": "Sabun cair untuk kesehatan kulit.",
+        "img": "data/img_product/LIFEBUOY_CAIR.jpg"
+    },
+    {
+        "nama": "Masako",
+        "harga": 1500,
+        "deskripsi": "Kaldu ayam dan sapi instan praktis.",
+        "img": "data/img_product/MASAKO.png"
+    },
+    {
+        "nama": "Mie Sedap",
+        "harga": 3500,
+        "deskripsi": "Mie instan kuah dan goreng segar.",
+        "img": "data/img_product/MIE_SEDAP.jpg"
+    },
+    {
+        "nama": "Nuvo Batang",
+        "harga": 4000,
+        "deskripsi": "Sabun mandi batang antibakteri.",
+        "img": "data/img_product/NUVO_BATANG.jpeg"
+    },
+    {
+        "nama": "Nuvo Cair",
+        "harga": 7000,
+        "deskripsi": "Sabun cair untuk perlindungan menyeluruh.",
+        "img": "data/img_product/NUVO_CAIR.jpg"
+    },
+    {
+        "nama": "Pepsodent",
+        "harga": 9000,
+        "deskripsi": "Pasta gigi untuk perlindungan gigi dan gusi.",
+        "img": "data/img_product/PEPSODENT.png"
+    },
+    {
+        "nama": "Racik",
+        "harga": 3000,
+        "deskripsi": "Bumbu racik instan untuk sop.",
+        "img": "data/img_product/RACIK.jpg"
+    },
+    {
+        "nama": "Rinso Cair",
+        "harga": 15000,
+        "deskripsi": "Deterjen cair ampuh untuk noda membandel.",
+        "img": "data/img_product/RINSO_CAIR.jpg"
+    },
+    {
+        "nama": "Royko",
+        "harga": 1500,
+        "deskripsi": "Penyedap rasa ayam dalam bentuk bubuk.",
+        "img": "data/img_product/ROYKO.jpg"
+    },
+    {
+        "nama": "Santan Kara 300ml",
+        "harga": 7000,
+        "deskripsi": "Santan kelapa siap pakai kemasan kotak.",
+        "img": "data/img_product/SANTAN_KARA_300ML.jpg"
+    },
+    {
+        "nama": "Shinzui",
+        "harga": 9000,
+        "deskripsi": "Sabun mandi pencerah kulit alami.",
+        "img": "data/img_product/SHINZUI.jpg"
+    },
+    {
+        "nama": "Sunlight",
+        "harga": 8000,
+        "deskripsi": "Sabun cuci piring cair, ampuh hilangkan lemak.",
+        "img": "data/img_product/SUNLIGHT.png"
+    },
+    {
+        "nama": "Teh Poci",
+        "harga": 2500,
+        "deskripsi": "Teh celup khas Indonesia, rasa nikmat.",
+        "img": "data/img_product/TEH_POCI.jpg"
+    },
+    {
+        "nama": "Tepung Terigu",
+        "harga": 10000,
+        "deskripsi": "Tepung serbaguna untuk memasak dan membuat kue.",
+        "img": "data/img_product/TEPUNG_TERIGU.jpg"
+    },
+    {
+        "nama": "Tissue",
+        "harga": 6000,
+        "deskripsi": "Tisu serbaguna untuk kebutuhan harian.",
+        "img": "data/img_product/TISSUE.jpg"
+    }
+]
